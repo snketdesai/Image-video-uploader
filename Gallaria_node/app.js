@@ -14,6 +14,8 @@ var AWS = require('aws-sdk');
 var events = require('events');
 var EventEmitter = events.EventEmitter;
 var eventOnUpload = new EventEmitter();
+var redis = require('redis');
+var redisClient = redis.createClient();
 
 app.set('port', process.env.PORT || 3002);
 app.set('views', __dirname + '/views');
@@ -65,15 +67,19 @@ client.on('onupload',function(name,temp){
 	      var urlParams = {Bucket: 'snket', Key: name};
 	      s3Bucket.getSignedUrl('getObject', urlParams, function(err, url){
 	          var url_image = url;
-	          eventOnUpload.emit('store',url_image);
+	          eventOnUpload.emit('store',url_image,name);
 	      })
 	    }
 	});
 });
 
-eventOnUpload.on('store',function(url){
+eventOnUpload.on('store',function(url,name){
 	
 	//console.log(url);
 	//make an entry in the database for image name and the url.
+	redisClient.set(name,url);
+	redisClient.get(name,function(error,data){
+		console.log(data);
+	});
 });
 });
