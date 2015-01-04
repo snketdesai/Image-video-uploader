@@ -1,0 +1,242 @@
+body {
+	background: transparent url(../img/bg.jpg) center center fixed;
+	color: #EEEEEE;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+i {
+	color: #666666;
+}
+
+input {
+	height: 33px !important;
+}
+
+label.error {
+	background-color: #B94A48;
+	border-radius: 4px 4px 4px 4px;
+	clear: both;
+	color: #FFFFFF;
+	display: block;
+	margin-top: 2px;
+	opacity: 0.8;
+	padding: 10px 8px;
+}
+
+label.valid {
+	background-color: #9ACEA5;
+	opacity: .9;
+}
+
+
+
+.header {
+	background-color:#366D6D;
+	color:#FFFFFF;
+	font-size:20px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.4;
+	margin-top:10%;
+	max-width:900px;
+	opacity:0.8;
+	padding:30px;
+	text-align:center;
+	text-shadow:none;
+}
+
+.heading {
+	font-size:54px;
+	font-weight: 200;
+	line-height:64px;
+	margin-bottom:30px;
+	margin-top:50px;
+	text-shadow: none;
+}
+
+.description {
+	font-family:'PT Sans', Helvetica, Arial, sans-serif;
+	margin-bottom:40px;
+	text-shadow: none;
+}
+
+#email {
+	border-radius: 14px;
+	padding: 6px;
+}
+
+#subscribe, 
+#send {
+	background: #F76C09;
+	border-radius: 4px;
+	box-shadow: none;
+}
+
+#socials-bar {
+	background-color: #222222;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+}
+
+/*******************************
+ Theme 
+ ********************************/
+ .theme {
+ 	color: #EEEEEE;
+ }
+
+ .theme h1 {
+ 	font-size:60px;
+ 	font-weight:300;
+ 	letter-spacing:-1px;
+ 	line-height:1;
+ 	margin:10px 0 10px;
+ 	color: #666666;
+ }
+
+ .theme h1 span {
+
+ }
+
+ .theme h2,
+ .theme h3 {
+ 	font-weight:200;
+ 	margin-bottom:5px;
+ 	color: #DDDDDD;
+ }
+
+ .theme .theme-byline {
+ 	color:#DDDDDD;
+ 	font-size:20px;
+ 	font-weight:300;
+ 	line-height:1.25;
+ 	margin-bottom:40px;
+ }
+
+ .theme p {
+ 	font-size:16px;
+ 	line-height:1.5;
+ 	font-weight: 100;
+ 	color: #555555;
+ }
+
+ .theme img {
+ 	margin: 5px auto;
+ }
+
+ .background {
+ 	background-color: #dddddd;
+ }
+
+ .center {
+ 	text-align: center;
+ }
+
+ .vspace30 {
+ 	padding: 30px 0;
+ }
+
+ /* COLORS */
+ .pink {
+ 	background-color: #EF648D;
+ }
+
+ .purple {
+ 	background-color: #9B95D4;
+ }
+
+ .lightblue {
+ 	background-color: #00DEF5;
+ }
+
+ .blue {
+ 	background-color: #1581F5;
+ }
+
+ .green {
+ 	background-color: #C1D739;
+ }
+
+ .pinkt {
+ 	color: #EF648D;
+ }
+
+ .purplet {
+ 	color: #9B95D4;
+ }
+
+ .lightbluet {
+ 	color: #00DEF5;
+ }
+
+ .bluet {
+ 	color: #1581F5;
+ }
+
+ .greent {
+ 	color: #C1D739;
+ }
+
+ @media (max-width: 767px) {
+ 	h1 {
+ 		font-size: 24px;
+ 	}
+ }
+
+ @media (max-width: 320px) {
+ 	h1 {
+ 		font-size: 18px;
+ 	}
+ }
+
+/* RESPONSIVE CSS HACKS
+-------------------------------------------------- */
+@media (max-width: 979px) {
+	.navbar {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		padding: 0;
+	}
+	
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#subscribe {
+		float: right;
+		margin-top: 5px;
+		padding: 8px 25px;
+	}
+
+	.heading {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.description {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.theme h1 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 600px) {
+
+}
