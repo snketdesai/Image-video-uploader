@@ -75,7 +75,7 @@ client.on('onupload',function(name,temp){
 
 eventOnUpload.on('store',function(url,name){
 	
-	//console.log(url);
+	
 	//make an entry in the database for image name and the url.
 	redisClient.set(name,url);
 	redisClient.get(name,function(error,data){
